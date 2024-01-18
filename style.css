@@ -100,3 +100,70 @@ body {
     right: 0;
   }
 }
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin-bottom: 2rem;
+}
+.image-container {
+  width: 150vw;
+  margin: 1rem;
+  padding-top: 4rem;
+}
+.aviral img {
+  width: 80%;
+  height: auto;
+}
+.content-container {
+  text-align: left;
+  font-size: 1rem;
+  margin-left: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 10px;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.read-more {
+  background-color: #181818;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.team-photo {
+  background: url(/web2.png);
+  height: 150vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+
+.team-photo .waves2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+.team-photo .waves1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
