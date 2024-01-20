@@ -1,73 +1,13 @@
-@import url(https://fonts.bunny.net/css?family=amita:700);
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ff9933;
   --color2: #181818;
-  background: url(https://res.cloudinary.com/ritalbradley/image/upload/v1657644013/pexels-elijah-o_donnell-3473569_o7ohfd.jpg)
-        center center/cover no-repeat;
-    min-height: 100vh;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
 }
-
-h1 {
-  color: #fefae0;
-  font-family: Amita;
-  margin: 20px auto;
-  width: 450px;
-  font-size: 3rem;
-  text-align: center;
-  border-bottom: 10px double #bc6c25;
-}
-
-img {
-  width: 450px;
-  height: 300px;
-  margin: 10px;
-  border: 10px solid #fefae0;
-  -webkit-filter: sepia(100%);
-  filter: sepia(100%);
-  transition-duration: 1s;
-}
-
-img:hover {
-  border: 5px solid #fff;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-filter: none;
-  filter: none;
-}
-
-footer {
-  background-color: #bc6c25;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  min-width: 100vw;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-body {
-  background-color: #ff9933;
-}
-
 .nav-bar {
   width: 100%;
   display: flex;
@@ -228,10 +168,38 @@ p {
   left: 0;
 }
 
-.campaigns{
+.campaigns {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
 }
 
+.campaigns h1 {
+  color: #181818;
+  margin: 20px auto;
+  width: 450px;
+  font-size: 3rem;
+}
 
+.campaigns img {
+  width: 28rem;
+  height: 16rem;
+  margin: 0.9rem;
+  /* border: 2px solid #181818; */
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); */
+  border-radius: 3%;
+  /* transition-duration: 1s; */
+}
+
+/* .campaigns img:hover {
+  border: 5px solid #181818;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-filter: none;
+  filter: none;
+} */
