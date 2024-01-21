@@ -213,7 +213,7 @@ p {
 }
 .ghat-section img:hover {
   transform: scale(1.1);
-  webkit-filter: blur(2px);
+  -webkit-filter: blur(2px);
   filter: blur(1.5px);
 }
 
