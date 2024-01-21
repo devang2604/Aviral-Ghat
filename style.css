@@ -4,6 +4,7 @@
   padding: 0;
 }
 body {
+  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   background-color: #ff9933;
   --color2: #181818;
@@ -168,29 +169,7 @@ p {
   left: 0;
 }
 
-.campaigns {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 2rem;
-  text-align: center;
-}
-
-.campaigns h1 {
-  color: #181818;
-  margin: 20px auto;
-  width: 450px;
-  font-size: 3rem;
-}
-
-.campaigns img {
-  width: 28rem;
-  height: 16rem;
-  margin: 0.9rem;
-  border-radius: 3%;
-}
-
+.campaigns,
 .ghat-section {
   display: flex;
   justify-content: center;
@@ -200,6 +179,7 @@ p {
   text-align: center;
 }
 
+.campaigns h1,
 .ghat-section h1 {
   color: #181818;
   margin: 20px auto;
@@ -207,9 +187,32 @@ p {
   font-size: 3rem;
 }
 
-.ghat-container img {
-  height: 16rem;
+.campaigns img,
+.ghat-section img {
   width: 28rem;
+  height: 16rem;
   margin: 0.9rem;
   border-radius: 3%;
+}
+
+.campaigns img {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+}
+
+.campaigns img:hover {
+  transform: scale(1.1);
+}
+
+.ghat-section img {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.ghat-section img:hover {
+  transform: scale(1.1);
+  webkit-filter: blur(2px);
+  filter: blur(1.5px);
 }
