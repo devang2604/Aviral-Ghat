@@ -487,3 +487,30 @@ hr {
   color: #fff;
   text-decoration: none;
 }
+
+.videos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+
+video {
+  width: 30vw;
+  height: auto;
+  border: 2px solid black;
+}
+
+.video-container {
+  text-align: center;
+}
+
+.videos video {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+}
+
+.videos video:hover {
+  transform: scale(1.05);
+}
