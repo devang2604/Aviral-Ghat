@@ -146,7 +146,7 @@ p {
 }
 
 .team-photo {
-  background: url(/images/web2.png);
+  background: url(images/web2.png);
   height: 125vh;
   background-size: cover;
   background-position: center center;
