@@ -169,8 +169,7 @@ p {
   left: 0;
 }
 
-.campaigns,
-.ghat-section {
+.campaigns {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,36 +184,70 @@ p {
   margin: 20px auto;
   width: 450px;
   font-size: 3rem;
+  text-align: center;
 }
 
-.campaigns img,
-.ghat-section img {
+.campaigns img {
   width: 28rem;
   height: 16rem;
   margin: 0.9rem;
   border-radius: 3%;
-}
-
-.campaigns img {
-  transition: grid-row-start 300ms linear;
-  transition: transform 300ms ease;
-  transition: all 0.5s ease;
+  transition: grid-row-start 300ms linear, transform 300ms ease, all 0.5s ease;
+  cursor: pointer;
+  border: 2px solid transparent; /* Add transparent border initially */
 }
 
 .campaigns img:hover {
   transform: scale(1.1);
+  border-color: black; /* Change the border color on hover */
 }
 
-.ghat-section img {
-  transition: grid-row-start 300ms linear;
-  transition: transform 300ms ease;
-  transition: all 0.5s ease;
-  cursor: pointer;
+.ghat-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
 }
-.ghat-section img:hover {
-  transform: scale(1.1);
-  -webkit-filter: blur(2px);
-  filter: blur(1.5px);
+
+.ghat-container img {
+  width: 28rem;
+  height: 16rem;
+  object-fit: cover;
+  margin: 0.5rem;
+  border-radius: 3%;
+  transition: grid-row-start 300ms linear, transform 300ms ease, all 0.5s ease;
+  cursor: pointer;
+  border: 2px solid transparent; /* Add transparent border initially */
+}
+
+.ghat-container img:hover {
+  transform: scale(1.03);
+  border-color: black; /* Change the border color on hover */
+}
+
+.ghat-container img:hover::after {
+  opacity: 1; /* Show on hover */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ghat-container .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease;
+}
+
+.ghat-container .ghat:hover .overlay {
+  opacity: 1; /* Show on hover */
+  font-size: 18px;
+  font-weight: bold;
 }
 
 #contact {
