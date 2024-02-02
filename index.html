@@ -167,34 +167,16 @@
 
             <!-- Left contact page -->
 
-            <form id="contact-form" class="form-horizontal" role="form">
-
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value=""
-                            required>
-                    </div>
+            <form action="" class="contact-left">
+                <div class="contact-left-title">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
+                    <button type="submit">Submit</button>
                 </div>
-
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value=""
-                            required>
-                    </div>
-                </div>
-
-                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-
-                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                    <div class="alt-send-button">
-                        <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-                    </div>
-
-                </button>
-
             </form>
 
-            <!-- Left contact page -->
+            <!-- Right contact page -->
 
             <div class="direct-contact-container">
 
@@ -238,6 +220,7 @@
         </div>
     </div>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
