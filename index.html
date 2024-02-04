@@ -21,9 +21,10 @@
             <input type='checkbox' id='check' />
             <span class="menu">
                 <li><a href="">Our Products</a></li>
-                <li><a href="" class="fa fa-instagram"></a></li>
-                <li><a href="" class="fa fa-facebook"></a></li>
-                <li><a href="" class="fa fa-linkedin"></a></li>
+                <li><a href="https://www.instagram.com/aviralghat/" target="_blank" class="fa fa-instagram"></a></li>
+                <li><a href="https://www.facebook.com/aviralghat/" target="_blank" class="fa fa-facebook"></a></li>
+                <li><a href="https://www.linkedin.com/in/iamshashanktiwari/" target="_blank" class="fa fa-linkedin"></a>
+                </li>
 
                 <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
             </span>
@@ -167,13 +168,13 @@
 
             <!-- Left contact page -->
 
-            <form action="" class="contact-left">
-                <div class="contact-left-title">
-                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-                    <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
-                    <button type="submit">Submit</button>
-                </div>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <input type="hidden" name="access_key" value="67c40a03-7319-493b-937b-bc48a9f42eda">
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
+                <button type="submit">Submit</button>
+
             </form>
 
             <!-- Right contact page -->
@@ -195,14 +196,20 @@
 
                 <hr>
                 <ul class="social-media-list">
-                    <li><a href="#" target="_blank" class="contact-icon">
-                            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <li>
+                        <a href="https://www.instagram.com/aviralghat/" target="_blank" class="contact-icon">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
                     </li>
-                    <li><a href="#" target="_blank" class="contact-icon">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <li>
+                        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" class="contact-icon">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
                     </li>
-                    <li><a href="#" target="_blank" class="contact-icon">
-                            <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <li>
+                        <a href="https://www.facebook.com/your-facebook-profile" target="_blank" class="contact-icon">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
                     </li>
                 </ul>
                 <hr>

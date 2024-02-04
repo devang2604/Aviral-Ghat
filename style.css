@@ -285,7 +285,6 @@ p {
   display:flex;
   flex-direction: column;
   align-items:center;
-  
   gap: 20px;
   
 }
@@ -298,13 +297,15 @@ p {
   padding-left: 25px;
   font-weight: 500;
   color: #666;
-  border-radius: 50px;
+  border-radius: 15px;
 }
 
 .contact-left textarea {
   height: 100px;
   padding-top: 15px;
   border-radius: 20px;
+  max-width: 400px;
+  min-width: 400px;
 }
 
 .contact-inputs:focus{
@@ -325,7 +326,7 @@ p {
   color: #fff;
   gap: 10px;
   border: none;
-  border-radius: 50px;
+  border-radius: 15px;
   background: linear-gradient(270deg, #ff994f,#fa6d86);
   cursor: pointer;
 }
