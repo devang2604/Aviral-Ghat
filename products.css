@@ -1,8 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap'); 
+
 .product-space {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-head {
+    width: 90%;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 
 .container {
@@ -10,11 +29,33 @@
     margin: 5rem;
 }
 
+.icon-cart svg {
+    width: 50px;
+}
+
+.icon-cart {
+    position: relative;
+}
+
+.icon-cart span {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+}
+
 .container .card {
     position: relative;
     width: 320px;
     height: 450px;
-    background: rgba(92, 90, 90, 0.2);
+    background:  rgba(92, 90, 90, 0.2);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     border-radius: 20px;
     backdrop-filter: blur(11px);
