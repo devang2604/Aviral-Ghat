@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Aviral Tshirt",
+        "price": 300,
+        "image" : "https://res.cloudinary.com/dssr9wa3x/image/upload/v1708927683/aviral/image-removebg-preview_2_nx56lj.png"
+    },
+    {
+        "id": 2,
+        "name": "Aviral Trousers",
+        "price": 300,
+        "image" : "https://res.cloudinary.com/dssr9wa3x/image/upload/v1708927673/aviral/trousers_aiakdh.png"
+    },
+    {
+        "id": 3,
+        "name": "Phone Covers",
+        "price": 300,
+        "image" : "https://res.cloudinary.com/dssr9wa3x/image/upload/v1708927659/aviral/iphone_cover-removebg-preview_ogsrsa.png"
+    },
+    {
+        "id": 4,
+        "name": "Aviral Hoodies",
+        "price": 300,
+        "image" : "https://res.cloudinary.com/dssr9wa3x/image/upload/v1708927619/aviral/hoodie_d96num.png"
+    },
+    {
+        "id": 5,
+        "name": "Cotton Bags",
+        "price": 300,
+        "image" : "https://res.cloudinary.com/dssr9wa3x/image/upload/v1708927603/aviral/cotton_bag-removebg-preview_ay2gk6.png"
+    },
+    {
+        "id": 6,
+        "name": "Carry Bags",
+        "price": 300,
+        "image" : "https://res.cloudinary.com/dssr9wa3x/image/upload/v1708927592/aviral/carry_bag_jky6w9.png"
+    },
+    {
+        "id": 7,
+        "name": "Aviral Caps",
+        "price": 300,
+        "image" : "https://res.cloudinary.com/dssr9wa3x/image/upload/v1708927422/aviral/cap_qzcipr.png"
+    },
+    {
+        "id": 8,
+        "name": "Aviral Bags",
+        "price": 300,
+        "image" : "https://res.cloudinary.com/dssr9wa3x/image/upload/v1708927185/aviral/bag_rph8al.png"
+    },
+    {
+        "id": 9,
+        "name": "Aviral Bottles",
+        "price": 300,
+        "image" : "https://res.cloudinary.com/dssr9wa3x/image/upload/v1708926965/aviral/bottle_lapxvc.png"
+    }
+]
