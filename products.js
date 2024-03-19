@@ -70,7 +70,7 @@ const addCartToHTML = () => {
   let totalQuantity = 0;
   if (carts.length > 0) {
     carts.forEach((cart) => {
-      totalQuantity = totalQuantity + cart.quantity;
+      totalQuantity += cart.quantity;
       let newCart = document.createElement("div");
       newCart.classList.add("item");
       newCart.dataset.id = cart.product_id;
@@ -90,9 +90,9 @@ const addCartToHTML = () => {
                     Rs. ${info.price * cart.quantity}
                 </div>
                 <div class="quantity">
-                    <span class="minus"><</span>
+                    <span class="minus">-</span>
                     <span>${cart.quantity}</span>
-                    <span class="plus">></span>
+                    <span class="plus">+</span>
                 </div>
       `;
       listCartHTML.appendChild(newCart);
@@ -104,12 +104,11 @@ const addCartToHTML = () => {
 listCartHTML.addEventListener("click", (event) => {
   let positionClick = event.target;
   if (
-    positionClick.classList.contains("minus") || positionClick.classList.contains("plus")) {
-    let product_id = positionClick.parentElement.dataset.id;
-    let type = 'minus';
-    if (positionClick.classList.contains("plus")) {
-      type = 'plus';
-    }
+    positionClick.classList.contains("minus") || 
+    positionClick.classList.contains("plus")
+  ) {
+    let product_id = positionClick.parentElement.parentElement.dataset.id;
+    let type = positionClick.classList.contains("plus") ? 'plus' : 'minus';
     changeQuantity(product_id, type);
   }
 });
@@ -136,10 +135,14 @@ const changeQuantity = (product_id, type) => {
   addCartToHTML();
 }
 
+const addCartToMemory = () => {
+  localStorage.setItem("cart", JSON.stringify(carts));
+}
+
 const initApp = () => {
   // get data from json
   fetch("products.json")
-    .then((response) => response.json())
+    .then(response => response.json())
     .then(data => {
       listProducts = data;
       addDataToHTML();
